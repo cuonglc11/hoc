@@ -1,0 +1,20 @@
+cấu  trúc  key-value  
+ -  key  là  khóa có  thể  lưu kiểu  số  , là  được tồn tại  bởi 1 value 
+  -  value  là giá trị của  mỗi key , mối  key tương ứng  với  1 value
+  ví dụ 
+key1 =>  value1
+key2 =>  value2
+
+  ["key1"]=>
+  string(6) "value1"
+  ["key2"]=>
+  string(6) "value2"
+  ["key3"]=>
+  string(6) "value3"
+cache  là   1 mảng  
+
+
+
+
+    //  $session = Cache::add($key,$value);
+             // array_push($arrayName, Cache::get($key));
