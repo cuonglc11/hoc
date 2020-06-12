@@ -1,0 +1,97 @@
+
+         $value = Cache::pull('key', 'ff');
+         $arrayName = array();
+         $value  = session()->getId();
+          $value = Cache::add('key', $value);
+        echo  Cache::get('key');
+        if (Cache::has('key')) {
+               array_push($arrayName,session()->getId() );
+         }
+         var_dump($arrayName);
+         // $session= Cache::get('key'.$value, $value);
+         // $session= Cache::get('key'.$value, $value);
+         //  echo  $session;
+         //  if ($session == session()->getId()  ) {
+         //      echo "eqd";
+         //  }
+         // $cc =  Cache::get('ddd',session()->getId());
+         // $ee = Cache::get('eee','dsds');
+         // echo  $cc  . $ee;
+         // var_dump($x);
+         
+         // $arrayName = array();
+         // array_push($arrayName, $session);
+         // // if($value == session()->getId()){
+         // //  echo "trungf  k";
+         // // }
+         //  var_dump($arrayName);
+         // echo "<br>";
+             // var_dump($array);
+       // echo Cache::get('cout');
+  echo  Cache::get($value);
+     // echo  Cache::add('cc')
+     if(Cache::has($value)){
+        
+     }
+     $hum =  Cache::set($value , $value);
+     $arrayName = array();
+     array_push($arrayName, Cache::get($value));
+     // array_push($arrayName, Cache::get($value));
+     var_dump($arrayName);
+      
+    }
+
+
+
+
+
+
+
+  // while ($session == $value) {
+     //     $s = Cache::get($value ,$value);
+     //    array_push($arrayName, $s);
+     // }
+     // foreach ($arrayName as $key => $value) {
+     //     if($value != session()->getId()){
+     //        $id = $session()->getId();
+     //         $s = Cache::get($id,$value , session()->getId());
+     //           echo  $s;   
+     //           dd();    
+     //    array_push($arrayName,  session()->getId());
+     //        // echo "khac nhau ";
+     //   }else{
+     //    // echo "khoon thuc  thi";
+     //   }
+        // echo $value;
+        // echo "<br>";
+        // echo  session()->getId();
+        // echo "<br>";
+     // }
+//  dd(Cache::get('uaeCg1H9N8vHG3eMg8AphCduVivoZoQuWg3xuJP0'));
+
+
+
+
+
+   $(document).ready(function(){
+         $.ajax({
+                type: "GET",
+                data: null,
+                url: "close",
+                dataType: 'json',
+                success: function (response) {
+                    if (response != null && response.success) {
+                        console.log(response);
+                        window.location = window.close();//from here,I want to close the tab.
+                    }
+                },
+                error: function (response) {
+                }
+});
+     });
+
+
+
+ window.onbeforeunload = function () {
+             return 'Are you really want to perform the action?';
+            }
